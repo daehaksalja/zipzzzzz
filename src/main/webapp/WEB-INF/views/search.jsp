@@ -126,11 +126,11 @@
 				<div class="search_wrap">
 					<form id="searchForm" action="/search" method="get">
 
-						<select name="type" class="select_input">
+					<!-- 	<select name="type" class="select_input">
 							<option value="T">책 제목</option>
 							<option value="A">작가</option>
 						</select>
-
+ -->
 						<div class="search_input">
 							<input class="searchInput" type="text" name="keyword"
 								value="<c:out value="${pageMaker.cri.keyword}"/>">

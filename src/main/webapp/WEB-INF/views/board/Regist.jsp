@@ -667,7 +667,7 @@ body {
                               
                               
                               
-                              var phoneregex = phoneregex.exec ;
+                              var phoneregex = phoneregex.exec(phone) ;
 
                               if (phoneregex == null) {
                                  $("#errorMsg").show();
@@ -675,7 +675,7 @@ body {
                                        .html(
                                              "핸드폰번호양식을 다시 확인해주시겠읍니까? (Ex:01011112222)");
                                  return;
-                              }
+                              }else if(phoneregex!= null){
                               var emailregex = emailregex.exec(email);
                               if (emailregex == null
                                     || div2 != "사용가능") {
@@ -704,7 +704,7 @@ body {
                                  }
                                  //빈칸 없을 때 제출.
                               }
-                              }
+                              }}
                            }}
 
                      })

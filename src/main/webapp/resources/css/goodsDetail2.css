@@ -6,14 +6,16 @@ a{
 
 
 body{
-	background-color: green;
+	background-color: GRAY;
 	width: 1920px;
 }
 
 /*  검색창*/
 .searchInput{
 		display:flex;
-	margin-top:0px;
+
+    margin-top: -51px;
+
 	margin-left:650px;
 	width:600px;
 	height: 30px;
@@ -39,6 +41,61 @@ body{
     text-align: center;
     font-size: 22px;	
 }
+
+
+
+.neon_effect .ship_intro:first-child{
+	display:flex;
+    width: 200px;
+    font-family: Comfortaa;
+    color: #fff;
+    animation: neon3 1.5s ease-in-out infinite alternate;
+    margin-left: 1162px;
+    margin-top: 14px;
+    font-size: 23px;
+  
+}
+/*수량 란 위치조절  */
+.neon_effect .orderText:first-child{
+	display:flex;
+
+    font-family: Comfortaa;
+    color: #fff;
+    animation: neon3 1.5s ease-in-out infinite alternate;
+    margin-left: 1162px;
+    margin-top: 14px;
+    font-size: 23px;
+  /*수량란크기조절  */
+}
+
+.orderInput{
+	display:flex;
+	 margin-left: 1162px;
+    margin-top: 14px;
+}
+
+.neon_effect .title:first-child{
+    width: 200px;
+    font-family: Comfortaa;
+    color: #fff;
+    animation: neon3 1.5s ease-in-out infinite alternate;
+    margin-left: 1162px;
+    margin-top: 14px;
+       font-size: 17px;
+}
+
+.neon_effect .sale_price:first-child{
+	        font-family: Comfortaa;
+    DISPLAY: flex;
+    color: #fff;
+    animation: neon3 1.5s ease-in-out infinite alternate;
+    margin-left: 1159px;
+    margin-top: 57px;
+        font-size: 26px;
+}
+
+
+
 
 .searchBtn{
 	display:flex;
@@ -107,12 +164,15 @@ body{
 
 /* 상품 이미지 관련 */
 		.image_wrap {
-		margin-left:400px;
-		margin-top:60px;
-		    width: 600px;
-		    height: auto;
+	    display: flex;
+    margin-left: 331px;
+    margin-top: 52px;
+    height: auto;
 		}	
 		.image_wrap img {
+	
+		position:absolute;
+		 width: 780px;
 		    max-width: 100%;
 		    height: auto;
 		    display: block;
@@ -296,14 +356,15 @@ body{
   color: #fff;
   animation: neon3 1.5s ease-in-out infinite alternate;
   
-	display:flex;
-	margin-top:-60px;
-	margin-left:1600px;
-	padding-top:25px;
-padding-left:55px;
+ position: absolute;
+  margin-top: -77px;
+    margin-left: 732px;
+    padding-top: 16px;
+    padding-left: 1px;
+
 	font-family:sans-serif;
 	width:130px;
-	height:  40px;
+	height:  39px;
   z-index: 1;
   overflow: hidden;
   cursor: pointer;
@@ -386,10 +447,6 @@ padding-left:55px;
 .btn--1:before {
   filter: url("data:image/svg+xml;utf8,\a<svg xmlns='http://www.w3.org/2000/svg' version='1.1'>\a<defs>\a<filter id='filter' x='-20%' y='-20%' width='140%' height='140%' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'>\a<feTurbulence type='turbulence' baseFrequency='0.04 0.03' numOctaves='12' seed='27' stitchTiles='stitch' x='0%' y='0%' width='100%' height='100%' result='turbulence'/>\a<feDisplacementMap in='SourceGraphic' in2='turbulence' scale='15' xChannelSelector='R' yChannelSelector='B' x='0%' y='0%' width='100%' height='100%' result='displacementMap2'/></filter>\a</defs>\a</svg>\a#filter\a") contrast(1.3);
 } 
-
-
-
-
 
 
 

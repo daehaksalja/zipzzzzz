@@ -43,11 +43,7 @@
 				<div class="search_wrap">
 					<form id="searchForm" action="/search" method="get">
 
-						<select name="type" class="select_input">
-							<option value="T">책 제목</option>
-							<option value="A">작가</option>
 
-						</select>
 
 						<div class="search_input">
 							<input type="text" name="keyword" class="searchInput"
@@ -75,39 +71,60 @@
 						</div>
 					</div>
 					<div class="ct_right_area">
-						<div class="title">
-							<h1>${goodsInfo.shipName}</h1>
+						<div class="neon_effect">
+							<div class="title">
+								<h1>${goodsInfo.shipName}</h1>
+							</div>
 						</div>
 						<div class="line"></div>
 
 						<div class="line"></div>
 						<div class="price">
-							<div class="sale_price">
-								정가 :
-								<fmt:formatNumber value="${goodsInfo.shipPrice}"
-									pattern="#,### 원" />
+							<div class="neon_effect">
+								<div class="sale_price">
+									<fmt:formatNumber value="${goodsInfo.shipPrice}"
+										pattern="#,### WON" />
+								</div>
 							</div>
+
+							<div class="neon_effect">
+								<div class="ship_intro">${goodsInfo.shipIntro}</div>
+							</div>
+
 							<div class="discount_price"></div>
 							<div class="line"></div>
 							<div class="button">
-								<div class="button_quantity">
-									주문수량 <input type="text" class="quantity_input" value="1">
-									<span>
-										<button class="plus_btn">+</button>
-										<button class="minus_btn">-</button>
-									</span>
+								<div class="neon_effect">
+									<div class="orderText">주문수량</div>
+
 								</div>
-								<div class="button_set">
-									<button class="btn_cart">장바구니 담기</button>
-									<button class="btn_buy">바로구매</button>
+								<div>
+									<input class="orderInput" type="text" class="quantity_input"
+										value="1">
+
+
+								</div>
+
+
+								<span>
+									<button class="plus_btn">+</button>
+									<button class="minus_btn">-</button>
+								</span>
+
+
+
+								<div class="neon_effect">
+
+									<div class="button_set">
+										<button class="btn_cart">장바구니 담기</button>
+										<button class="btn_buy">바로구매</button>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="line"></div>
-					<div class="content_middle">
-						<div class="ship_intro">${goodsInfo.shipIntro}</div>
-					</div>
+
 					<div class="line"></div>
 					<div class="content_bottom">리뷰</div>
 
